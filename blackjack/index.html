@@ -18,34 +18,45 @@
                 <h2>Rules !!!</h2>
                 <ol>
                     <li>
-                        Player places a bet.
+                        <!-- Rule 1 -->
+                        Player places a bet
                     </li>
                     <li>
-                        Dealer deals cards to players
+                        <!-- Rule 2 -->
+                        Dealer deals cards to player
                         <ul class="sublist">
                             <li>
-                                2 Player cards: both open
+                                <!-- sub-rule 1 -->
+                                Player cards: both open
                             </li>
-                            <li> 
-                                2 Dealer cards: one card closed and the other open
+                            <li>
+                                <!-- sub-rule 2 -->
+                                Dealer cards: one card closed and the other open
                             </li>
                         </ul>
                     </li>
                     <li>
-                        Player decides how to play hand a. A player can choose to “hit” and request an additional card from the deck. (In our Implementation we are restricting to 2 Extra Cards) b. A player can choose to “stand” and keep the original cards dealt.
+                        <!-- Rule 3 -->
+                        Player decides how to play hand a.
                         <ul class="sublist">
-                            <li> 
-                                A player can choose to “hit” and request an additional card from the deck. (In our Implementation we are restricting to 2 Extra Cards)
+                            <li>
+                                <!-- sub-rule 1 -->
+                                A player can choose to “hit” and request an additional card
+                                from the deck.
                             </li>
-                            <li> 
-                                A player can choose to “stand” and keep the original cards dealt.
+                            <li>
+                                <!-- sub-rule 2 -->
+                                A player can
+                                choose to “stand” and keep the original cards dealt.
                             </li>
                         </ul>
                     </li>
                     <li>
-                        Dealer plays hand (shows his closed card
+                        <!-- Rule 4 -->
+                        Dealer plays hand (shows his closed card)
                     </li>
                     <li>
+                        <!-- Rule 5 -->
                         Payouts
                     </li>
                 </ol>
@@ -58,14 +69,14 @@
         <div class="board">
             <h1>Dealer:</h1>
             <div id="dealerCards">
-                <div id="card1"></div>
-                <div id="card2"></div>
+                <div id="card1" class="card" style="background-position: -900px center;"></div>
+                <div id="card2" class="card" style="background-position: 0px center;"></div>
             </div>
             <!-- <hr /> -->
             <h1>Player:</h1>
             <div id="playerCards">
-                <div id="playerCard1"></div>
-                <div id="playerCard2"></div>
+                <div id="playerCard1" class="card" style="background-position: -5400px center;"></div>
+                <div id="playerCard2 " class="card" style="background-position:-1051px center;"></div>
                 <div id="playerCard3"></div>
                 <div id="playerCard4"></div>
             </div>
