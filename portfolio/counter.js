@@ -3,7 +3,7 @@ function updateCounter() {
     //increment the counter everytime user visits the page by storing in local storage
 
     let count = localStorage.getItem('visiterCount');
-    if (count == null) {
+    if (count == null||count == NaN) {
         count = 1;
     }
     else {
