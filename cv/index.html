@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="left">
+            <form>
+                <!-- Name , Email , Phone , Github , Linkedin -->
+                <label>Name:</label>
+                <input type="text"value="Name"><br><br>
+                <label>Email:</label>
+                <input type="text" value="Email"><br><br>
+                <label>Phone:</label>
+                <input type="text" value="Phone"><br><br>
+                <label>Github:</label>
+                <input type="text" value="Github"><br><br>
+                <label>Linkedin:</label>
+                <input type="text" value="Linkedin">
+                
+  
+
+                <fieldset>
+                    <legend>Education</legend>
+                    <!-- Degree , College , Starting Year , Passing Year , CGPA -->
+                    <label>Degree:</label>
+                    <input type="text" value="Degree"><br><br>
+                    <label>College:</label>
+                    <input type="text" value="college"><br><br>
+                    <label>Starting Year:</label>
+                    <input type="text" value="Starting Year"><br><br>
+                    <label>Passing Year:</label>
+                    <input type="text" value="Passing Year"><br><br>
+                    <label>CGPA:</label>
+                    <input type="text" value="CGPA">
+                </fieldset>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <!-- skills -->
+                    <label>Skills:</label>
+                    <textarea rows = "5" cols = "60" >
+                        Skills...e.g html,css
+                     </textarea><br>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Projects</legend>
+                    <!-- Project , Description , Link -->
+                    <label>Project:</label>
+                    <input type="text" value="Project"><br><br>
+                    <label>Description:</label>
+                    <textarea rows = "5" cols = "60" >
+                        Write in html format
+                     </textarea><br><br>
+                    <label>Link:</label>
+                    <input type="text area" value="Link">
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <!-- Company , Designation , Duration , Description -->
+                    <label>Company:</label>
+                    <input type="text area" value="Company"><br><br>
+                    <label>Designation:</label>
+                    <input type="text area" value="Designation"><br><br>
+                    <label>Duration:</label>
+                    <input type="text area" value="Duration"><br><br>
+                    <label>Description:</label>
+                    <textarea rows = "5" cols = "60" >
+                        Write in html format
+                     </textarea>
+                </fieldset>
+                <br><br> <button type="submit" class="btn">submit</button>
+                <button type="reset" class="btn">reset</button>
+                <button class="btn" onclick="handleLeft()">View and Print</button>
+            </form>
+        </div>
+        <div class="right">
+            <div class="block1">
+                <!-- Name -->
+                <!--Email , Phone , Github , Linkedin  -->
+            </div>
+            <div class="block2">
+                <h2>Education</h2>
+            </div>
+            <div class="block3">
+            </div>
+            <div class="block4">
+                <h2>Project</h2>
+            </div>
+            <div class="block5">
+                <h2>Experience</h2>
+            </div>
+            <button class="btn print" onclick="handlePrint()">Print</button>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
