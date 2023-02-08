@@ -75,31 +75,66 @@
                         Write in html format
                      </textarea>
                 </fieldset>
-                <br><br> <button type="submit" class="btn">submit</button>
+                
+                <button type="submit" class="btn" onclick="handleSubmit()">Submit</button>
+                <!-- <button type="submit" class="btn">submit</button> -->
                 <button type="reset" class="btn">reset</button>
-                <button class="btn" onclick="handleLeft()">View and Print</button>
+                <button class="btn" onclick="handleLeft()">View & Print</button>
             </form>
         </div>
         <div class="right">
+            <!-- <div class="rht"> -->
             <div class="block1">
                 <!-- Name -->
+                <p id="name-name"></p>
                 <!--Email , Phone , Github , Linkedin  -->
+                <div class="algn">
+                    <p id="email-name"></p>
+                    <p id="phone-name"></p>
+                    <p id="github-name"></p>
+                    <p id="linkedin-name"></p>
+                </div>
             </div>
             <div class="block2">
                 <h2>Education</h2>
+                <hr class="hrr">
+                <p style="font-weight: bold;" id="college-name"></p>
+                <p style="font-weight:bold;" id="degree-name"></p>
+                <div>
+                    <p id="startingyear-name"></p>
+                    <p class="" id="passingyear-name"></p>
+                </div>
+                <p id="cgpa-name"></p>
             </div>
             <div class="block3">
+                <h2>Skills</h2>
+                <hr class="hrr">
+                <p style="font-weight: bold;" id="skills-name"></p>
             </div>
             <div class="block4">
                 <h2>Project</h2>
+                <hr class="hrr">
+                <p style="font-weight: bold;" id="project-name"></p>
+                <p id="description-name"></p>
+                <p id="link-name"></p>
             </div>
             <div class="block5">
                 <h2>Experience</h2>
+                <hr class="hrr">
+                <p style="font-weight: bold;" id="company-name"></p>
+                <p id="designation-name"></p>
+                <p id="duration-name"></p>
+                <p id="description1-name"></p>
+
             </div>
-            <button class="btn print" onclick="handlePrint()">Print</button>
+            <button id="print" style="display: none;" class="btn print" onclick="handlePrint()">print</button>
+            <!-- </div> -->
+
         </div>
+
     </main>
 
-    <script src="./app.js"></script>
+    <script src="../CV/app.js"></script>
 </body>
+
 </html>
