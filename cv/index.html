@@ -1,87 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CV/style.css">
 
 </head>
+
 <body>
     <main>
         <div class="left">
             <form>
+                <span class="fname">Name:</span><input type="text" class="inpt" name="name" id="name"><br>
+                <span class="fname">Email:</span><input type="text" class="inpt" name="email" id="email"><br>
+                <span class="fname">Phone:</span><input type="text" class="inpt" name="phone" id="phone"><br>
+                <span class="fname">Github:</span><input type="text" class="inpt" name="github" id="github"><br>
+                <span class="fname">Linkedin:</span><input type="text" class="inpt" name="linkedin" id="linkedin"><br>
                 <!-- Name , Email , Phone , Github , Linkedin -->
-                <label>Name:</label>
-                <input type="text"value="Name"><br><br>
-                <label>Email:</label>
-                <input type="text" value="Email"><br><br>
-                <label>Phone:</label>
-                <input type="text" value="Phone"><br><br>
-                <label>Github:</label>
-                <input type="text" value="Github"><br><br>
-                <label>Linkedin:</label>
-                <input type="text" value="Linkedin">
-                
-  
 
                 <fieldset>
                     <legend>Education</legend>
+                    <span class="fname">College:</span><input type="text" class="inpt" name="college" id="college"><br>
+                    <span class="fname">Degree:</span><input type="text" class="inpt" name="degree" id="degree"><br>
+                    <span class="fname">Starting Year:</span><input type="text" class="inpt" name="startingyear"
+                        id="startingyear"><br>
+                    <span class="fname">Passing Year:</span><input type="text" class="inpt" name="passingyear"
+                        id="passingyear"><br>
+                    <span class="fname">CGPA:</span><input type="text" class="inpt" name="cgap" id="cgpa"><br>
                     <!-- Degree , College , Starting Year , Passing Year , CGPA -->
-                    <label>Degree:</label>
-                    <input type="text" value="Degree"><br><br>
-                    <label>College:</label>
-                    <input type="text" value="college"><br><br>
-                    <label>Starting Year:</label>
-                    <input type="text" value="Starting Year"><br><br>
-                    <label>Passing Year:</label>
-                    <input type="text" value="Passing Year"><br><br>
-                    <label>CGPA:</label>
-                    <input type="text" value="CGPA">
                 </fieldset>
                 <fieldset>
                     <legend>Skills</legend>
+                    <span class="fname">Skills:</span><textarea type="text" class="inpt" name="skills"
+                        id="skills"></textarea><br>
                     <!-- skills -->
-                    <label>Skills:</label>
-                    <textarea rows = "5" cols = "60" >
-                        Skills...e.g html,css
-                     </textarea><br>
-                    
                 </fieldset>
                 <fieldset>
                     <legend>Projects</legend>
+                    <span class="fname">Project:</span><input type="text" class="inpt" name="project" id="project"><br>
+                    <span class="fname">Description:</span><textarea type="text" class="inpt" name="description"
+                        id="description"></textarea><br>
+                    <span class="fname">Link:</span><input type="text" class="inpt" name="link" id="link"><br>
                     <!-- Project , Description , Link -->
-                    <label>Project:</label>
-                    <input type="text" value="Project"><br><br>
-                    <label>Description:</label>
-                    <textarea rows = "5" cols = "60" >
-                        Write in html format
-                     </textarea><br><br>
-                    <label>Link:</label>
-                    <input type="text area" value="Link">
                 </fieldset>
                 <fieldset>
                     <legend>Experience</legend>
+                    <span class="fname">Company:</span><input type="text" class="inpt" name="company" id="company"><br>
+                    <span class="fname">Designation:</span><input type="text" class="inpt" name="designation"
+                        id="designation"><br>
+                    <span class="fname">Duration:</span><input type="text" class="inpt" name="duration"
+                        id="duration"><br>
+                    <span class="fname">Description:</span><textarea type="text" class="inpt" name="description1"
+                        id="description1"></textarea><br>
                     <!-- Company , Designation , Duration , Description -->
-                    <label>Company:</label>
-                    <input type="text area" value="Company"><br><br>
-                    <label>Designation:</label>
-                    <input type="text area" value="Designation"><br><br>
-                    <label>Duration:</label>
-                    <input type="text area" value="Duration"><br><br>
-                    <label>Description:</label>
-                    <textarea rows = "5" cols = "60" >
-                        Write in html format
-                     </textarea>
                 </fieldset>
-                
                 <button type="submit" class="btn" onclick="handleSubmit()">Submit</button>
                 <!-- <button type="submit" class="btn">submit</button> -->
                 <button type="reset" class="btn">reset</button>
                 <button class="btn" onclick="handleLeft()">View & Print</button>
             </form>
         </div>
+
         <div class="right">
             <!-- <div class="rht"> -->
             <div class="block1">
