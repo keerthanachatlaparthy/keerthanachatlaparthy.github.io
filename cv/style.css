@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -43,6 +48,7 @@ main>.left {
     border-bottom-right-radius: 0.5rem;
 }
 
+
 main>.left legend {
     color: black;
     font-weight: 600;
@@ -64,6 +70,26 @@ main>.left fieldset {
     color: yellow;
     font-weight: 600;
     cursor: pointer;
+}
+
+#myButton {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+@media print {
+    #myButton {
+        display: none !important;
+    }
 }
 
 /* resume */
@@ -93,25 +119,76 @@ main>.right>.block1 {
     display: none;
 }
 
-.inpt {
-    /* position: absolute; */
-    margin-bottom: 5px;
-    /* padding-right: 50px; */
-    margin-left: 100px;
-    border: 15px;
-}
-
-.form {
-    /* display: flex; */
-    align-items: center;
+input {
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 4px;
+    margin-left: auto;
 
 }
 
-.fname {
-    padding-right: 30px;
-    position: absolute;
-    /* padding: 50px; */
-    /* padding-right: 30px; */
+textarea {
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 4px;
+    margin-left: auto;
+}
+
+input {
+    height: 25px;
+}
+
+textarea {
+    height: 50px;
+}
+
+.sameline {
+    display: flex;
+}
+
+#phone_resume {
+    color: rgb(0, 74, 233);
+}
+
+#name_resume {
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+    display: flex;
+}
+
+#github_resume,
+#linkedin_resume,
+#projectlink_resume {
+    color: rgb(0, 74, 233);
+    text-decoration: underline;
+}
+
+#email_resume {
+    color: rgb(0, 74, 233);
+}
+
+/* h2:after
+{
+    content:' ';
+    display:block;
+    border:2px solid black;
+} */
+
+.block2,
+.block3,
+.block4,
+.block5 {
+    margin-right: auto;
+}
+
+.right h2 {
+    margin-bottom: 10px;
+    display: block;
+    text-decoration-style: solid;
+
 }
 
 .hrr {
@@ -124,12 +201,34 @@ h2 {
     color: darkgrey;
 }
 
-.algn {
-    display: flex;
-    flex-direction: row;
+#startingyear_resume {
+    float: left;
+    width: 40%;
 }
 
-/* .rht {
-    padding-left: 50px;
-    padding-right: 50px;
-} */
+#passingyear_resume {
+    float: right;
+    width: 45%;
+}
+
+#project_resume {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#projectlink_resume {
+    margin-top: 10px;
+}
+
+.block5 h2 {
+    margin-bottom: 10px;
+}
+
+#company_resume,
+#designation_resume,
+#description_resume,
+#project_resume,
+#projectdescription_resume,
+#projectlink_resume {
+    margin-bottom: 3px;
+}

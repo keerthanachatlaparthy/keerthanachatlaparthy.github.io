@@ -3,143 +3,134 @@ form.addEventListener("submit", handleSubmit);
 
 // import all the fields from the form.
 // eg.
-// const name = document.getElementById("name");
+const name = document.getElementById("name");
+
+const email = document.getElementById("email");
+
+const phone = document.getElementById("Mobile");
+
+const github = document.getElementById("Github");
+
+const linkedin = document.getElementById("linkedin");
+
+const degree = document.getElementById("degree");
+
+const college = document.getElementById("college");
+
+const startingyear = document.getElementById("startingyear");
+
+const passingyear = document.getElementById("passingyear");
+
+const skills = document.getElementById("skills");
+
+const project = document.getElementById("project");
+
+const projectdescription = document.getElementById("projectdescription");
+
+const projectlink = document.getElementById("projectlink");
+
+const company = document.getElementById("company");
+
+const designation = document.getElementById("designation");
+
+const duration = document.getElementById("duration");
+
+const description = document.getElementById("description");
+
+
 
 function handleSubmit(e) {
   e.preventDefault();
   //   here get the values from the form and set it to the resume
   // eg.
-  //   const name_resume = document.getElementById("name_resume");
-  //   name_resume.innerHTML = name.value;
-  //   similarly for all the other fields
-  let name = document.getElementById('name').value;
-  document.getElementById("name-name").innerHTML = name;
-  document.getElementById("name-name").style.fontSize = "20px";
-  document.getElementById("name-name").style.color = "darkgray";
-  document.getElementById("name").value = '';
+  const name_resume = document.getElementById("name_resume");
+  name_resume.innerHTML = name.value;
 
-  let email = document.getElementById('email').value;
-  document.getElementById("email-name").innerHTML = email;
-  document.getElementById("email-name").style.fontSize = "10px";
-  document.getElementById("email-name").style.color = "blue";
-  document.getElementById("email").value = '';
+  const email_resume = document.getElementById("email_resume");
+  email_resume.innerHTML = email.value;
 
-  let phone = document.getElementById('phone').value;
-  document.getElementById("phone-name").innerHTML = phone;
-  document.getElementById("phone-name").style.fontSize = "10px";
-  document.getElementById("phone-name").style.color = "blue";
-  document.getElementById("phone").value = '';
+  const phone_resume = document.getElementById("phone_resume");
+  phone_resume.innerHTML = phone.value;
 
-  let github = document.getElementById('github').value;
-  document.getElementById("github-name").innerHTML = github;
-  document.getElementById("github-name").style.fontSize = "10px";
-  document.getElementById("github-name").style.color = "blue";
-  document.getElementById("github").value = '';
+  const github_resume = document.getElementById("github_resume");
+  github_resume.innerHTML = github.value;
 
-  let linkedin = document.getElementById('linkedin').value;
-  document.getElementById("linkedin-name").innerHTML = linkedin;
-  document.getElementById("linkedin-name").style.fontSize = "10px";
-  document.getElementById("linkedin-name").style.color = "blue";
-  document.getElementById("linkedin").value = '';
+  const linkedin_resume = document.getElementById("linkedin_resume");
+  linkedin_resume.innerHTML = linkedin.value;
 
+  const degree_resume = document.getElementById("degree_resume");
+  degree_resume.innerHTML = degree.value;
 
-  let college = document.getElementById('college').value;
-  document.getElementById("college-name").innerHTML = college;
-  document.getElementById("college-name").style.fontSize = "20px";
-  document.getElementById("college-name").style.color = "black";
-  document.getElementById("college").value = '';
+  const college_resume = document.getElementById("college_resume");
+  college_resume.innerHTML = college.value;
 
-  let degree = document.getElementById('degree').value;
-  document.getElementById("degree-name").innerHTML = degree;
-  document.getElementById("degree-name").style.fontSize = "15px";
-  document.getElementById("degree-name").style.color = "black";
-  document.getElementById("degree").value = '';
+  const startingyear_resume = document.getElementById("startingyear_resume");
+  startingyear_resume.innerHTML = startingyear.value;
 
-  let startingyear = document.getElementById('startingyear').value;
-  document.getElementById("startingyear-name").innerHTML = startingyear;
-  document.getElementById("startingyear-name").style.fontSize = "10px";
-  document.getElementById("startingyear-name").style.color = "black";
-  document.getElementById("startingyear").value = '';
+  const passingyear_resume = document.getElementById("passingyear_resume");
+  passingyear_resume.innerHTML = passingyear.value;
 
-  let passingyear = document.getElementById('passingyear').value;
-  document.getElementById("passingyear-name").innerHTML = passingyear;
-  document.getElementById("passingyear-name").style.fontSize = "10px";
-  document.getElementById("passingyear-name").style.color = "black";
-  document.getElementById("passingyear").value = '';
+  const skills_resume = document.getElementById("skills_resume");
+  skills_resume.innerHTML = skills.value;
 
-  let cgpa = document.getElementById('cgpa').value;
-  document.getElementById("cgpa-name").innerHTML = cgpa;
-  document.getElementById("cgpa-name").style.fontSize = "10px";
-  document.getElementById("cgpa-name").style.color = "black";
-  document.getElementById("cgpa").value = '';
+  const project_resume = document.getElementById("project_resume");
+  project_resume.innerHTML = project.value;
 
+  const projectdescription_resume = document.getElementById("projectdescription_resume");
+  projectdescription_resume.innerHTML = projectdescription.value;
 
-  let skills = document.getElementById('skills').value;
-  document.getElementById("skills-name").innerHTML = skills;
-  document.getElementById("skills-name").style.fontSize = "15px";
-  document.getElementById("skills-name").style.color = "black";
-  document.getElementById("skills").value = '';
+  const projectlink_resume = document.getElementById("projectlink_resume");
+  projectlink_resume.innerHTML = projectlink.value;
 
-  let project = document.getElementById('project').value;
-  document.getElementById("project-name").innerHTML = project;
-  document.getElementById("project-name").style.fontSize = "20px";
-  document.getElementById("project-name").style.color = "black";
-  document.getElementById("project").value = '';
+  const company_resume = document.getElementById("company_resume");
+  company_resume.innerHTML = company.value;
 
+  const designation_resume = document.getElementById("designation_resume");
+  designation_resume.innerHTML = designation.value;
 
-  let description = document.getElementById('description').value;
-  document.getElementById("description-name").innerHTML = description;
-  document.getElementById("description-name").style.fontSize = "10px";
-  document.getElementById("description-name").style.color = "black";
-  document.getElementById("description").value = '';
+  const duration_resume = document.getElementById("duration_resume");
+  duration_resume.innerHTML = duration.value;
 
-  let link = document.getElementById('link').value;
-  document.getElementById("link-name").innerHTML = link;
-  document.getElementById("link-name").style.fontSize = "10px";
-  document.getElementById("link-name").style.color = "blue";
-  document.getElementById("link").value = '';
+  const description_resume = document.getElementById("description_resume");
+  description_resume.innerHTML = description.value;
 
-  let company = document.getElementById('company').value;
-  document.getElementById("company-name").innerHTML = company;
-  document.getElementById("company-name").style.fontSize = "20px";
-  document.getElementById("company-name").style.color = "black";
-  document.getElementById("company").value = '';
-
-  let designation = document.getElementById('designation').value;
-  document.getElementById("designation-name").innerHTML = designation;
-  document.getElementById("designation-name").style.fontSize = "13px";
-  document.getElementById("designation-name").style.color = "black";
-  document.getElementById("designation").value = '';
-
-  let duration = document.getElementById('duration').value;
-  document.getElementById("duration-name").innerHTML = duration;
-  document.getElementById("duration-name").style.fontSize = "10px";
-  document.getElementById("duration-name").style.color = "black";
-  document.getElementById("duration-name").value = '';
-
-  let description1 = document.getElementById('description1').value;
-  document.getElementById("description1-name").innerHTML = description1;
-  document.getElementById("description1-name").style.fontSize = "10px";
-  document.getElementById("description1-name").style.color = "black";
-  document.getElementById("description1-name").value = '';
 }
 
-function handleLeft() {
-  // const left = document.querySelector(".left");
-  // const right = document.querySelector(".right");
-  // const print = document.querySelector(".print");
+// function handleLeft() {
+//   const left = document.querySelector(".left");
+//   const right = document.querySelector(".right");
+//   const print = document.querySelector("#print");
 
-  document.querySelector(".left").style.display = "none";
-  document.querySelector(".right").style.display = "block";
-  document.querySelector(".print").style.display = "block"
+//   left.style.display = "none";
+//   print.style.display = "block";
+
+// }
+// function handlePrint() {
+//   const right = document.querySelector(".right");
+//   const left = document.querySelector(".left");
+//   const print = document.querySelector(".print");
+//   // write more codes here
+//   window.print();
+// }
+function handleLeft() {
+  const left = document.querySelector(".left");
+  const right = document.querySelector(".right");
+  const print = document.querySelector(".print");
+  // write more codes here
+  document.getElementById("left").onclick = function () {
+    document.getElementById("left").style.display = "none";
+  }
+  document.getElementById("myButton").style.display = "block";
 
 }
 function handlePrint() {
-  // const right = document.querySelector(".right");
-  // const left = document.querySelector(".left");
-  // const print = document.querySelector("print");
-  document.querySelector(".left").style.display = "block";
-  document.querySelector(".right").style.display = "block";
+  const right = document.querySelector(".right");
+  const left = document.querySelector(".left");
+  const print = document.querySelector(".print");
   // write more codes here
+
+
   window.print();
+
+
 }
