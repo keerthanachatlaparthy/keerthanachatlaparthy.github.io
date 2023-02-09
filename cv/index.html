@@ -12,111 +12,144 @@
 
 <body>
     <main>
-        <div class="left">
+        <div class="left" id="left">
             <form>
-                <span class="fname">Name:</span><input type="text" class="inpt" name="name" id="name"><br>
-                <span class="fname">Email:</span><input type="text" class="inpt" name="email" id="email"><br>
-                <span class="fname">Phone:</span><input type="text" class="inpt" name="phone" id="phone"><br>
-                <span class="fname">Github:</span><input type="text" class="inpt" name="github" id="github"><br>
-                <span class="fname">Linkedin:</span><input type="text" class="inpt" name="linkedin" id="linkedin"><br>
                 <!-- Name , Email , Phone , Github , Linkedin -->
-
+                <div class="sameline">
+                    <p>Name : </p>
+                    <input type="text" id="name" placeholder=" name">
+                </div>
+                <div class="sameline">
+                    <p>Email : </p>
+                    <input type="email" id="email" placeholder=" Email">
+                </div>
+                <div class="sameline">
+                    <p>Phone : </p>
+                    <input type="text" id="Mobile" placeholder=" Phone">
+                </div>
+                <div class="sameline">
+                    <p>Github : </p>
+                    <input type="url" id="Github" placeholder=" Github">
+                </div>
+                <div class="sameline">
+                    <p>Linkedin : </p>
+                    <input type="url" id="linkedin" placeholder=" Linkedin">
+                </div>
                 <fieldset>
                     <legend>Education</legend>
-                    <span class="fname">College:</span><input type="text" class="inpt" name="college" id="college"><br>
-                    <span class="fname">Degree:</span><input type="text" class="inpt" name="degree" id="degree"><br>
-                    <span class="fname">Starting Year:</span><input type="text" class="inpt" name="startingyear"
-                        id="startingyear"><br>
-                    <span class="fname">Passing Year:</span><input type="text" class="inpt" name="passingyear"
-                        id="passingyear"><br>
-                    <span class="fname">CGPA:</span><input type="text" class="inpt" name="cgap" id="cgpa"><br>
                     <!-- Degree , College , Starting Year , Passing Year , CGPA -->
+                    <div class="sameline">
+                        <p>Degree : </p>
+                        <input type="text" id="degree" placeholder=" Degree">
+                    </div>
+                    <div class="sameline">
+                        <p>College : </p>
+                        <input type="text" id="college" placeholder=" College">
+                    </div>
+                    <div class="sameline">
+                        <p>Starting Year : </p>
+                        <input type="text" id="startingyear" placeholder=" Starting Year">
+                    </div>
+                    <div class="sameline">
+                        <p>Passing Year</p>
+                        <input type="text" id="passingyear" placeholder=" Passing Year">
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Skills</legend>
-                    <span class="fname">Skills:</span><textarea type="text" class="inpt" name="skills"
-                        id="skills"></textarea><br>
                     <!-- skills -->
+                    <div class="sameline">
+                        <p>Skills : </p>
+                        <textarea placeholder="Skills eg. HTML, CSS" id="skills"></textarea>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Projects</legend>
-                    <span class="fname">Project:</span><input type="text" class="inpt" name="project" id="project"><br>
-                    <span class="fname">Description:</span><textarea type="text" class="inpt" name="description"
-                        id="description"></textarea><br>
-                    <span class="fname">Link:</span><input type="text" class="inpt" name="link" id="link"><br>
                     <!-- Project , Description , Link -->
+                    <div class="sameline">
+                        <p>Project : </p>
+                        <input type="text" id="project" placeholder=" Project">
+                    </div>
+                    <div class="sameline">
+                        <p>Description : </p>
+                        <textarea placeholder="Write in HTML format" id="projectdescription"></textarea>
+                    </div>
+                    <div class="sameline">
+                        <p>Link : </p>
+                        <input type="url" id="projectlink" placeholder=" Link">
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Experience</legend>
-                    <span class="fname">Company:</span><input type="text" class="inpt" name="company" id="company"><br>
-                    <span class="fname">Designation:</span><input type="text" class="inpt" name="designation"
-                        id="designation"><br>
-                    <span class="fname">Duration:</span><input type="text" class="inpt" name="duration"
-                        id="duration"><br>
-                    <span class="fname">Description:</span><textarea type="text" class="inpt" name="description1"
-                        id="description1"></textarea><br>
                     <!-- Company , Designation , Duration , Description -->
+                    <div class="sameline">
+                        <p>Company : </p>
+                        <input type="text" id="company" placeholder=" Company">
+                    </div>
+                    <div class="sameline">
+                        <p>Designation : </p>
+                        <input type="text" id="designation" placeholder=" Designation">
+                    </div>
+                    <div class="sameline">
+                        <p>Duration : </p>
+                        <input type="text" id="duration" placeholder=" Duration">
+                    </div>
+                    <div class="sameline">
+                        <p>Description : </p>
+                        <textarea id="description" placeholder="Write in HTML format"></textarea>
+                    </div>
                 </fieldset>
-                <button type="submit" class="btn" onclick="handleSubmit()">Submit</button>
-                <!-- <button type="submit" class="btn">submit</button> -->
+                <button type="submit" class="btn" onclick="handleSubmit()">submit</button>
                 <button type="reset" class="btn">reset</button>
-                <button class="btn" onclick="handleLeft()">View & Print</button>
+                <button class="btn" onclick="handleLeft()">View and Print</button>
             </form>
         </div>
-
         <div class="right">
-            <!-- <div class="rht"> -->
             <div class="block1">
                 <!-- Name -->
-                <p id="name-name"></p>
                 <!--Email , Phone , Github , Linkedin  -->
-                <div class="algn">
-                    <p id="email-name"></p>
-                    <p id="phone-name"></p>
-                    <p id="github-name"></p>
-                    <p id="linkedin-name"></p>
-                </div>
+                <p id="name_resume"></p>
+                <p id="email_resume"></p>
+                <p id="phone_resume"></p>
+                <a id="github_resume" src="github_resume"></a>
+                <a id="linkedin_resume" src="linkedin_resume"></a>
             </div>
             <div class="block2">
                 <h2>Education</h2>
                 <hr class="hrr">
-                <p style="font-weight: bold;" id="college-name"></p>
-                <p style="font-weight:bold;" id="degree-name"></p>
-                <div>
-                    <p id="startingyear-name"></p>
-                    <p class="" id="passingyear-name"></p>
-                </div>
-                <p id="cgpa-name"></p>
+                <p id="college_resume"></p>
+                <p id="degree_resume"></p>
+                <p id="startingyear_resume"></p>
+                &#8209;
+                <p id="passingyear_resume"></p>
             </div>
             <div class="block3">
                 <h2>Skills</h2>
                 <hr class="hrr">
-                <p style="font-weight: bold;" id="skills-name"></p>
+                <p class="skills-style" id="skills_resume"></p>
             </div>
             <div class="block4">
                 <h2>Project</h2>
                 <hr class="hrr">
-                <p style="font-weight: bold;" id="project-name"></p>
-                <p id="description-name"></p>
-                <p id="link-name"></p>
+                <p id="project_resume"></p>
+                <p id="projectdescription_resume"></p>
+                <a id="projectlink_resume" href="projectlink_resume"></a>
             </div>
             <div class="block5">
                 <h2>Experience</h2>
                 <hr class="hrr">
-                <p style="font-weight: bold;" id="company-name"></p>
-                <p id="designation-name"></p>
-                <p id="duration-name"></p>
-                <p id="description1-name"></p>
-
+                <p id="company_resume"></p>
+                <p id="designation_resume"></p>
+                <p id="duration_resume"></p>
+                <p id="description_resume"></p>
             </div>
-            <button id="print" style="display: none;" class="btn print" onclick="handlePrint()">print</button>
-            <!-- </div> -->
 
+
+            <button id="myButton" style="display:none;" onclick="handlePrint()">Print</button>
         </div>
-
     </main>
 
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
