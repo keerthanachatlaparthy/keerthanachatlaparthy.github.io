@@ -1,8 +1,4 @@
-/**
- * NOTE: SELECTION SORT SOLUTION IS GIVEN AS A REFERECE TO COMPLETE THE OTHER SORTING ALGORITHMS
- */
-
- async function selection(){
+async function selection(){
     console.log('In selection()');
     const ele = document.querySelectorAll(".bar");
     for(let i = 0; i < ele.length; i++){
